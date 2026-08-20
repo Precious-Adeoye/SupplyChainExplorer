@@ -99,8 +99,8 @@ namespace Backend.Services
                         Name = product.Properties["name"]?.ToString() ?? string.Empty,
                         Sku = product.Properties["sku"]?.ToString() ?? string.Empty,
                         Price = Convert.ToDecimal(product.Properties["price"]),
-                        CategoryName = product.Properties["categoryName"]?.ToString() ?? string.Empty,
-                        WarehouseName = product.Properties["warehouseName"]?.ToString() ?? string.Empty
+                        //CategoryName = product.Properties["categoryName"]?.ToString() ?? string.Empty,
+                        //WarehouseName = product.Properties["warehouseName"]?.ToString() ?? string.Empty
                     };
                 }).ToList();
 
