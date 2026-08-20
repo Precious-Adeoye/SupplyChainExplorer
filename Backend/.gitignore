@@ -1,3 +1,19 @@
-.env
+# Visual Studio
+.vs/
+.user
+.suo
+
+# .NET
 bin/
 obj/
+
+# Environment variables
+.env
+appsettings.Development.json
+
+# Logs
+.log
+
+# OS
+.DS_Store
+Thumbs.db
