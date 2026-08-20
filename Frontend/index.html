@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,236 +12,942 @@
 
 <body>
 
-    <header class="topbar">
-        <div>
-            <h1>Supply Chain Explorer</h1>
-            <p>Supply chain management dashboard</p>
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">SC</div>
+
+            <div>
+                <h1>SupplyChain</h1>
+                <span>Explorer</span>
+            </div>
         </div>
 
-        <nav>
-            <button class="nav-btn active" data-section="dashboard">
-                Dashboard
+        <nav class="sidebar-nav">
+
+            <button class="nav-item active" data-section="dashboard">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
             </button>
 
-            <button class="nav-btn" data-section="products">
-                Products
+            <button class="nav-item" data-section="products">
+                <span class="nav-icon">▣</span>
+                <span>Products</span>
             </button>
 
-            <button class="nav-btn" data-section="suppliers">
-                Suppliers
+            <button class="nav-item" data-section="suppliers">
+                <span class="nav-icon">♙</span>
+                <span>Suppliers</span>
             </button>
 
-            <button class="nav-btn" data-section="warehouses">
-                Warehouses
+            <button class="nav-item" data-section="warehouses">
+                <span class="nav-icon">▤</span>
+                <span>Warehouses</span>
             </button>
 
-            <button class="nav-btn" data-section="inventory">
-                Inventory
+            <button class="nav-item" data-section="inventory">
+                <span class="nav-icon">▦</span>
+                <span>Inventory</span>
             </button>
+
         </nav>
-    </header>
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+                <div>
+                    <strong>System</strong>
+                    <small id="connection-status">Checking...</small>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
 
 
-    <main>
+    <!-- =========================
+         MAIN AREA
+    ========================== -->
 
-        <!-- DASHBOARD -->
+    <div class="main-wrapper">
 
-        <section id="dashboard" class="page-section active-section">
+        <!-- TOPBAR -->
 
-            <h2>Dashboard</h2>
+        <header class="topbar">
 
-            <section class="dashboard">
+            <div class="mobile-brand">
+                <strong>SupplyChain Explorer</strong>
+            </div>
 
-                <div class="card">
-                    <h3>Suppliers</h3>
-                    <p id="supplier-count">0</p>
+            <div class="topbar-right">
+
+                <button
+                    id="refresh-btn"
+                    class="icon-btn"
+                    title="Refresh data">
+                    ↻
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- =========================
+                 DASHBOARD
+            ========================== -->
+
+            <section
+                id="dashboard"
+                class="page-section active-section">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="page-label">OVERVIEW</span>
+
+                        <h2>Supply Chain Dashboard</h2>
+
+                        <p>
+                            Monitor your suppliers, products,
+                            warehouses and inventory.
+                        </p>
+                    </div>
+
+                    <button
+                        id="dashboard-refresh"
+                        class="secondary-btn">
+                        ↻ Refresh
+                    </button>
+
                 </div>
 
-                <div class="card">
-                    <h3>Products</h3>
-                    <p id="product-count">0</p>
+
+                <!-- STAT CARDS -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon supplier-icon">
+                            ♙
+                        </div>
+
+                        <div>
+                            <span class="stat-label">
+                                Suppliers
+                            </span>
+
+                            <strong
+                                id="supplier-count"
+                                class="stat-value">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon product-icon">
+                            ▣
+                        </div>
+
+                        <div>
+                            <span class="stat-label">
+                                Products
+                            </span>
+
+                            <strong
+                                id="product-count"
+                                class="stat-value">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon warehouse-icon">
+                            ▤
+                        </div>
+
+                        <div>
+                            <span class="stat-label">
+                                Warehouses
+                            </span>
+
+                            <strong
+                                id="warehouse-count"
+                                class="stat-value">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon inventory-icon">
+                            ▦
+                        </div>
+
+                        <div>
+                            <span class="stat-label">
+                                Inventory Items
+                            </span>
+
+                            <strong
+                                id="inventory-count"
+                                class="stat-value">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>Warehouses</h3>
-                    <p id="warehouse-count">0</p>
-                </div>
 
-                <div class="card">
-                    <h3>Inventory Items</h3>
-                    <p id="inventory-count">0</p>
+                <!-- DASHBOARD CONTENT -->
+
+                <div class="dashboard-grid">
+
+                    <div class="panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Products Overview</h3>
+                                <p>Products currently in the system.</p>
+                            </div>
+
+                            <button
+                                class="text-btn"
+                                data-section="products">
+                                View all
+                            </button>
+
+                        </div>
+
+                        <div class="table-container">
+
+                            <table>
+
+                                <thead>
+
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>SKU</th>
+                                        <th>Price</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="product-table">
+
+                                    <tr>
+                                        <td
+                                            colspan="3"
+                                            class="empty-state">
+                                            Loading products...
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Low Stock</h3>
+                                <p>Products that need attention.</p>
+                            </div>
+
+                            <button
+                                class="text-btn"
+                                data-section="inventory">
+                                View inventory
+                            </button>
+
+                        </div>
+
+                        <div
+                            id="low-stock-list"
+                            class="low-stock-list">
+
+                            <div class="empty-state">
+                                Checking inventory...
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </section>
 
-            <section class="content">
 
-                <h2>Products Overview</h2>
+            <!-- =========================
+                 PRODUCTS
+            ========================== -->
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>SKU</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
+            <section
+                id="products"
+                class="page-section">
 
-                    <tbody id="product-table"></tbody>
-                </table>
+                <div class="page-header">
+
+                    <div>
+                        <span class="page-label">CATALOG</span>
+
+                        <h2>Products</h2>
+
+                        <p>
+                            Manage products in your supply chain.
+                        </p>
+                    </div>
+
+                    <button
+                        id="add-product-btn"
+                        class="primary-btn">
+                        + Add Product
+                    </button>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="toolbar">
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input
+                                type="text"
+                                id="product-search"
+                                placeholder="Search products or SKU...">
+
+                        </div>
+
+                        <button
+                            id="products-refresh"
+                            class="secondary-btn">
+                            ↻ Refresh
+                        </button>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Product</th>
+                                    <th>SKU</th>
+                                    <th>Price</th>
+                                    <th>Actions</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="products-table">
+
+                                <tr>
+                                    <td
+                                        colspan="4"
+                                        class="empty-state">
+                                        Loading products...
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
 
             </section>
 
-        </section>
 
+            <!-- =========================
+                 SUPPLIERS
+            ========================== -->
 
-        <!-- PRODUCTS -->
+            <section
+                id="suppliers"
+                class="page-section">
 
-        <section id="products" class="page-section">
+                <div class="page-header">
 
-            <div class="section-header">
-                <div>
-                    <h2>Products</h2>
-                    <p>Manage products in the supply chain.</p>
+                    <div>
+                        <span class="page-label">PARTNERS</span>
+
+                        <h2>Suppliers</h2>
+
+                        <p>
+                            View suppliers connected to your products.
+                        </p>
+                    </div>
+
+                    <button
+                        id="suppliers-refresh"
+                        class="secondary-btn">
+                        ↻ Refresh
+                    </button>
+
                 </div>
 
-                <button class="primary-btn">
-                    + Add Product
+
+                <div class="panel">
+
+                    <div class="toolbar">
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input
+                                type="text"
+                                id="supplier-search"
+                                placeholder="Search suppliers...">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Supplier</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="suppliers-table">
+
+                                <tr>
+                                    <td
+                                        colspan="3"
+                                        class="empty-state">
+                                        Loading suppliers...
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 WAREHOUSES
+            ========================== -->
+
+            <section
+                id="warehouses"
+                class="page-section">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="page-label">LOCATIONS</span>
+
+                        <h2>Warehouses</h2>
+
+                        <p>
+                            View warehouse locations in the network.
+                        </p>
+                    </div>
+
+                    <button
+                        id="warehouses-refresh"
+                        class="secondary-btn">
+                        ↻ Refresh
+                    </button>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="toolbar">
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input
+                                type="text"
+                                id="warehouse-search"
+                                placeholder="Search warehouses...">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Warehouse</th>
+                                    <th>Location</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="warehouses-table">
+
+                                <tr>
+                                    <td
+                                        colspan="2"
+                                        class="empty-state">
+                                        Loading warehouses...
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 INVENTORY
+            ========================== -->
+
+            <section
+                id="inventory"
+                class="page-section">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="page-label">STOCK CONTROL</span>
+
+                        <h2>Inventory</h2>
+
+                        <p>
+                            Monitor stock levels across warehouses.
+                        </p>
+                    </div>
+
+                    <button
+                        id="inventory-refresh"
+                        class="secondary-btn">
+                        ↻ Refresh
+                    </button>
+
+                </div>
+
+
+                <div class="inventory-summary">
+
+                    <div class="inventory-summary-card">
+                        <span>Total Items</span>
+                        <strong id="inventory-total">0</strong>
+                    </div>
+
+                    <div class="inventory-summary-card warning">
+                        <span>Low Stock</span>
+                        <strong id="inventory-low-stock">0</strong>
+                    </div>
+
+                    <div class="inventory-summary-card danger">
+                        <span>Out of Stock</span>
+                        <strong id="inventory-out-stock">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="toolbar">
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input
+                                type="text"
+                                id="inventory-search"
+                                placeholder="Search SKU or warehouse...">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Product SKU</th>
+                                    <th>Warehouse</th>
+                                    <th>Quantity</th>
+                                    <th>Reorder Level</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="inventory-table">
+
+                                <tr>
+                                    <td
+                                        colspan="5"
+                                        class="empty-state">
+                                        Loading inventory...
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         PRODUCT MODAL
+    ========================== -->
+
+    <div
+        id="product-modal"
+        class="modal-overlay hidden">
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="page-label">PRODUCT</span>
+
+                    <h2 id="product-modal-title">
+                        Add Product
+                    </h2>
+                </div>
+
+                <button
+                    id="close-product-modal"
+                    class="modal-close">
+                    ×
                 </button>
-            </div>
-
-            <div class="content">
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>SKU</th>
-                            <th>Price</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="products-table"></tbody>
-
-                </table>
 
             </div>
 
-        </section>
 
+            <form id="product-form">
 
-        <!-- SUPPLIERS -->
+                <div class="form-group">
 
-        <section id="suppliers" class="page-section">
+                    <label for="product-name">
+                        Product Name
+                    </label>
 
-            <div class="section-header">
-                <div>
-                    <h2>Suppliers</h2>
-                    <p>Manage your suppliers.</p>
+                    <input
+                        type="text"
+                        id="product-name"
+                        required>
+
                 </div>
 
-                <button class="primary-btn">
-                    + Add Supplier
+
+                <div class="form-group">
+
+                    <label for="product-sku">
+                        SKU
+                    </label>
+
+                    <input
+                        type="text"
+                        id="product-sku"
+                        required>
+
+                    <small id="sku-help">
+                        SKU uniquely identifies the product.
+                    </small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="product-price">
+                        Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="product-price"
+                        min="0.01"
+                        step="0.01"
+                        required>
+
+                </div>
+
+
+                <div
+                    id="create-product-extra-fields"
+                    class="extra-form-fields">
+
+                    <div class="form-group">
+
+                        <label for="product-supplier">
+                            Supplier
+                        </label>
+
+                        <input
+                            type="text"
+                            id="product-supplier"
+                            placeholder="Supplier name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="product-category">
+                            Category
+                        </label>
+
+                        <input
+                            type="text"
+                            id="product-category"
+                            placeholder="Category name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="product-warehouse">
+                                Warehouse
+                            </label>
+
+                            <input
+                                type="text"
+                                id="product-warehouse"
+                                placeholder="Warehouse name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="product-quantity">
+                                Quantity
+                            </label>
+
+                            <input
+                                type="number"
+                                id="product-quantity"
+                                min="0"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="product-reorder">
+                            Reorder Level
+                        </label>
+
+                        <input
+                            type="number"
+                            id="product-reorder"
+                            min="0"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="product-form-error"
+                    class="form-error hidden">
+                </div>
+
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        id="cancel-product-btn"
+                        class="secondary-btn">
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        id="save-product-btn"
+                        class="primary-btn">
+                        Save Product
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CONFIRM DELETE MODAL
+    ========================== -->
+
+    <div
+        id="delete-modal"
+        class="modal-overlay hidden">
+
+        <div class="modal small-modal">
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="page-label">WARNING</span>
+
+                    <h2>Delete Product</h2>
+                </div>
+
+                <button
+                    id="close-delete-modal"
+                    class="modal-close">
+                    ×
                 </button>
-            </div>
-
-            <div class="content">
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="suppliers-table"></tbody>
-
-                </table>
 
             </div>
 
-        </section>
+            <div class="delete-message">
 
-
-        <!-- WAREHOUSES -->
-
-        <section id="warehouses" class="page-section">
-
-            <div class="section-header">
-
-                <div>
-                    <h2>Warehouses</h2>
-                    <p>Manage storage locations.</p>
+                <div class="warning-icon">
+                    !
                 </div>
 
-                <button class="primary-btn">
-                    + Add Warehouse
+                <p>
+                    Are you sure you want to delete
+                    <strong id="delete-product-name"></strong>?
+                </p>
+
+                <small>
+                    This action cannot be undone.
+                </small>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    id="cancel-delete-btn"
+                    class="secondary-btn">
+                    Cancel
+                </button>
+
+                <button
+                    id="confirm-delete-btn"
+                    class="danger-btn">
+                    Delete Product
                 </button>
 
             </div>
 
-            <div class="content">
+        </div>
 
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Location</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="warehouses-table"></tbody>
-
-                </table>
-
-            </div>
-
-        </section>
+    </div>
 
 
-        <!-- INVENTORY -->
+    <!-- =========================
+         TOAST
+    ========================== -->
 
-        <section id="inventory" class="page-section">
+    <div
+        id="toast"
+        class="toast hidden">
 
-            <div class="section-header">
+        <span id="toast-message"></span>
 
-                <div>
-                    <h2>Inventory</h2>
-                    <p>Monitor product stock levels.</p>
-                </div>
-
-            </div>
-
-            <div class="content">
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>Product SKU</th>
-                            <th>Warehouse</th>
-                            <th>Quantity</th>
-                            <th>Reorder Level</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="inventory-table"></tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-    </main>
+    </div>
 
 
     <script src="js/api.js"></script>
     <script src="js/app.js"></script>
 
 </body>
+
 </html>
