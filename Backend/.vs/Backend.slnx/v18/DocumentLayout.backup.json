@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\warehousescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\warehousescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\services\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\dtos\\warehousedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:dtos\\warehousedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\interfaces\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:interfaces\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\interfaces\\isupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:interfaces\\isupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\dtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:dtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\dtos\\inventorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +79,6 @@
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\dtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:dtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\dtos\\warehousedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:dtos\\warehousedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,28 +87,8 @@
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\warehousescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\warehousescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\services\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\interfaces\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:interfaces\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,24 +111,12 @@
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\interfaces\\isupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:interfaces\\isupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\data\\cognodbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:data\\cognodbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -125,10 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\users\\bolu\\documents\\different-things\\supplychainexplorer\\backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,11 +138,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SuppliersController.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\SuppliersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SuppliersController.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\SuppliersController.cs",
+              "RelativeToolTip": "Controllers\\SuppliersController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T17:31:05.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WarehousesController.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\WarehousesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WarehousesController.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\WarehousesController.cs",
+              "RelativeToolTip": "Controllers\\WarehousesController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwCQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T10:07:59.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WarehouseService.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\WarehouseService.cs",
+              "RelativeDocumentMoniker": "Services\\WarehouseService.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\WarehouseService.cs",
+              "RelativeToolTip": "Services\\WarehouseService.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAwFYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T10:05:45.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WarehouseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\WarehouseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\WarehouseDto.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\WarehouseDto.cs",
+              "RelativeToolTip": "Dtos\\WarehouseDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T09:57:52.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IWarehouseService.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\IWarehouseService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IWarehouseService.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\IWarehouseService.cs",
+              "RelativeToolTip": "Interfaces\\IWarehouseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T09:58:44.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-19T15:56:50.47Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -150,20 +228,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InventoryDto.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\InventoryDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\InventoryDto.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\InventoryDto.cs",
-              "RelativeToolTip": "Dtos\\InventoryDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Warehouse.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Warehouse.cs",
+              "RelativeDocumentMoniker": "Models\\Warehouse.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Warehouse.cs",
+              "RelativeToolTip": "Models\\Warehouse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T10:25:27.489Z",
+              "WhenOpened": "2026-08-20T09:57:12.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "SupplierDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\SupplierDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\SupplierDto.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\SupplierDto.cs",
+              "RelativeToolTip": "Dtos\\SupplierDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA+wBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T17:27:53.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISupplierService.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\ISupplierService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ISupplierService.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\ISupplierService.cs",
+              "RelativeToolTip": "Interfaces\\ISupplierService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T15:10:42.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SupplierService.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\SupplierService.cs",
+              "RelativeDocumentMoniker": "Services\\SupplierService.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\SupplierService.cs",
+              "RelativeToolTip": "Services\\SupplierService.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAgwKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T17:05:48.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAtwG4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T18:24:10.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "Models\\Supplier.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Supplier.cs",
+              "RelativeToolTip": "Models\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T15:12:23.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:08:00.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
@@ -175,33 +331,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\ProductService.cs",
-              "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAowFEAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "InventoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\InventoryDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\InventoryDto.cs",
+              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\InventoryDto.cs",
+              "RelativeToolTip": "Dtos\\InventoryDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T18:24:10.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-20T10:25:27.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T16:08:00.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\ProductDto.cs",
               "RelativeDocumentMoniker": "Dtos\\ProductDto.cs",
@@ -213,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\IProductService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IProductService.cs",
@@ -225,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Inventory.cs",
               "RelativeDocumentMoniker": "Models\\Inventory.cs",
@@ -237,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "InventoryService.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\InventoryService.cs",
               "RelativeDocumentMoniker": "Services\\InventoryService.cs",
@@ -249,31 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SupplierDto.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\SupplierDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\SupplierDto.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\SupplierDto.cs",
-              "RelativeToolTip": "Dtos\\SupplierDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T17:27:53.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WarehouseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\WarehouseDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\WarehouseDto.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\WarehouseDto.cs",
-              "RelativeToolTip": "Dtos\\WarehouseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T09:57:52.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "InventoryController.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\InventoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
@@ -285,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "IInventoryService.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\IInventoryService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IInventoryService.cs",
@@ -297,55 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WarehousesController.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\WarehousesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WarehousesController.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\WarehousesController.cs",
-              "RelativeToolTip": "Controllers\\WarehousesController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T10:07:59.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WarehouseService.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\WarehouseService.cs",
-              "RelativeDocumentMoniker": "Services\\WarehouseService.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\WarehouseService.cs",
-              "RelativeToolTip": "Services\\WarehouseService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAuwDgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T10:05:45.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IWarehouseService.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\IWarehouseService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IWarehouseService.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\IWarehouseService.cs",
-              "RelativeToolTip": "Interfaces\\IWarehouseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T09:58:44.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Warehouse.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Warehouse.cs",
-              "RelativeDocumentMoniker": "Models\\Warehouse.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Warehouse.cs",
-              "RelativeToolTip": "Models\\Warehouse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T09:57:12.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "Services\\CategoryService.cs",
@@ -357,19 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SupplierService.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\SupplierService.cs",
-              "RelativeDocumentMoniker": "Services\\SupplierService.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Services\\SupplierService.cs",
-              "RelativeToolTip": "Services\\SupplierService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAQwEAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T17:05:48.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
@@ -381,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\ICategoryService.cs",
               "RelativeDocumentMoniker": "Interfaces\\ICategoryService.cs",
@@ -393,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "CategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Dtos\\CategoryDto.cs",
               "RelativeDocumentMoniker": "Dtos\\CategoryDto.cs",
@@ -405,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -417,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -429,31 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "SuppliersController.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\SuppliersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SuppliersController.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\SuppliersController.cs",
-              "RelativeToolTip": "Controllers\\SuppliersController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwB4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T17:31:05.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ISupplierService.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\ISupplierService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ISupplierService.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Interfaces\\ISupplierService.cs",
-              "RelativeToolTip": "Interfaces\\ISupplierService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T15:10:42.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "TestController.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "Controllers\\TestController.cs",
@@ -465,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "CognoDbConnection.cs",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Data\\CognoDbConnection.cs",
               "RelativeDocumentMoniker": "Data\\CognoDbConnection.cs",
@@ -477,19 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Supplier.cs",
-              "RelativeDocumentMoniker": "Models\\Supplier.cs",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Models\\Supplier.cs",
-              "RelativeToolTip": "Models\\Supplier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T15:12:23.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Backend.csproj",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Backend.csproj",
               "RelativeDocumentMoniker": "Backend.csproj",
@@ -501,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -513,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -522,18 +544,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-08-19T15:56:53.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\.env",
-              "RelativeDocumentMoniker": ".env",
-              "ToolTip": "C:\\Users\\Bolu\\Documents\\different-things\\SupplyChainExplorer\\Backend\\.env",
-              "RelativeToolTip": ".env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-19T15:56:50.47Z"
             }
           ]
         }

@@ -78,34 +78,26 @@ function showTableError(elementId, columns, message) {
 ========================================================= */
 
 function setupNavigation() {
-
-    $$(".nav-item").forEach(button => {
-
+    document.querySelectorAll("[data-section]").forEach(button => {
         button.addEventListener("click", () => {
+            const section = button.dataset.section;
+            if (!section) return;
 
-            navigateTo(button.dataset.section);
-
-        });
-
-    });
-
-
-    $$("[data-section]").forEach(button => {
-
-        if (
-            !button.classList.contains("nav-item")
-        ) {
-
-            button.addEventListener("click", () => {
-
-                navigateTo(button.dataset.section);
-
+            document.querySelectorAll(".nav-item").forEach(item => {
+                item.classList.toggle(
+                    "active",
+                    item.dataset.section === section
+                );
             });
 
-        }
-
+            document.querySelectorAll(".page-section").forEach(item => {
+                item.classList.toggle(
+                    "active-section",
+                    item.id === section
+                );
+            });
+        });
     });
-
 }
 
 
