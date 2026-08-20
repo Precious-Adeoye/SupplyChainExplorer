@@ -82,5 +82,66 @@ namespace Backend.Services
                 await session.CloseAsync();
             }
         }
+
+
+        public async Task<WarehouseDto> UpdateWarehouseAsync(string name,UpdateWarehouseDto dto)
+        {
+            var query = """
+            MATCH (w:Warehouse {name: $name})
+            SET w.location = $location
+            RETURN w
+            """;
+
+            await using var session =
+                _database.Driver.AsyncSession();
+
+            var result = await session.RunAsync(
+                query,
+                new
+                {
+                    name,
+                    location = dto.Location
+                }
+            );
+
+            var record = await result.SingleAsync();
+
+            var warehouse =
+                record["w"].As<INode>();
+
+            return new WarehouseDto
+            {
+                Name =
+                    warehouse.Properties["name"]?.ToString()
+                    ?? string.Empty,
+
+                Location =
+                    warehouse.Properties["location"]?.ToString()
+                    ?? string.Empty
+            };
+        }
+
+
+        public async Task<bool> DeleteWarehouseAsync(  string name)
+        {
+            var query = """
+            MATCH (w:Warehouse {name: $name})
+            DETACH DELETE w
+            RETURN count(w) AS deleted
+            """;
+
+            await using var session =
+                _database.Driver.AsyncSession();
+
+            var result = await session.RunAsync(
+                query,
+                new { name }
+            );
+
+            var record =
+                await result.SingleAsync();
+
+            return record["deleted"].As<int>() > 0;
+        }
     }
 }

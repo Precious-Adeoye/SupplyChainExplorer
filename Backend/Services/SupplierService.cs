@@ -96,5 +96,73 @@ namespace Backend.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<SupplierDto> UpdateSupplierAsync(  string name, UpdateSupplierDto dto)
+        {
+            var query = """
+        MATCH (s:Supplier {name: $name})
+        SET s.email = $email,
+            s.phone = $phone
+        RETURN s
+        """;
+
+            await using var session =
+                _database.Driver.AsyncSession();
+
+            var parameters = new
+            {
+                name,
+                email = dto.Email,
+                phone = dto.Phone
+            };
+
+            var result =
+                await session.RunAsync(query, parameters);
+
+            var record = await result.SingleAsync();
+
+            var supplier =
+                record["s"].As<INode>();
+
+            return new SupplierDto
+            {
+                Name =
+                    supplier.Properties["name"]?.ToString()
+                    ?? string.Empty,
+
+                Email =
+                    supplier.Properties["email"]?.ToString()
+                    ?? string.Empty,
+
+                Phone =
+                    supplier.Properties["phone"]?.ToString()
+                    ?? string.Empty
+            };
+        }
+
+        public async Task<bool> DeleteSupplierAsync(
+    string name)
+        {
+            var query = """
+        MATCH (s:Supplier {name: $name})
+        DETACH DELETE s
+        RETURN count(s) AS deleted
+        """;
+
+            await using var session =
+                _database.Driver.AsyncSession();
+
+            var result = await session.RunAsync(
+                query,
+                new { name }
+            );
+
+            var record =
+                await result.SingleAsync();
+
+            return record["deleted"].As<int>() > 0;
+        }
     }
+
+
 }

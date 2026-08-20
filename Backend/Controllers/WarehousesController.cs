@@ -32,5 +32,37 @@ namespace Backend.Controllers
 
             return Ok(warehouse);
         }
+
+        [HttpPut("{name}")]
+        public async Task<ActionResult<WarehouseDto>> UpdateWarehouse(string name,UpdateWarehouseDto dto)
+        {
+            var warehouse =
+                await _warehouseService.UpdateWarehouseAsync(
+                    name,
+                    dto
+                );
+
+            return Ok(warehouse);
+        }
+
+
+        [HttpDelete("{name}")]
+        public async Task<IActionResult> DeleteWarehouse(
+            string name)
+        {
+            var deleted =
+                await _warehouseService.DeleteWarehouseAsync(
+                    name
+                );
+
+            if (!deleted)
+            {
+                return NotFound(
+                    $"Warehouse '{name}' was not found."
+                );
+            }
+
+            return NoContent();
+        }
     }
 }

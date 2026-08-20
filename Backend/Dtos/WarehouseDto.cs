@@ -15,4 +15,9 @@
         public string Location { get; set; } = string.Empty;
         
     }
+
+    public class UpdateWarehouseDto
+    {
+        public string Location { get; set; } = string.Empty;
+    }
 }

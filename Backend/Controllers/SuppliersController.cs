@@ -25,8 +25,7 @@ namespace Backend.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<SupplierDto>> CreateSupplier(
-    CreateSupplierDto dto)
+        public async Task<ActionResult<SupplierDto>> CreateSupplier( CreateSupplierDto dto)
         {
             var supplier = await _supplierService.CreateSupplierAsync(dto);
 
@@ -34,6 +33,40 @@ namespace Backend.Controllers
                 nameof(GetSuppliers),
                 supplier
             );
+        }
+
+        [HttpPut("{name}")]
+        public async Task<ActionResult<SupplierDto>> UpdateSupplier(
+    string name,
+    UpdateSupplierDto dto)
+        {
+            var supplier =
+                await _supplierService.UpdateSupplierAsync(
+                    name,
+                    dto
+                );
+
+            return Ok(supplier);
+        }
+
+
+        [HttpDelete("{name}")]
+        public async Task<IActionResult> DeleteSupplier(
+            string name)
+        {
+            var deleted =
+                await _supplierService.DeleteSupplierAsync(
+                    name
+                );
+
+            if (!deleted)
+            {
+                return NotFound(
+                    $"Supplier '{name}' was not found."
+                );
+            }
+
+            return NoContent();
         }
     }
 }
