@@ -108,7 +108,7 @@ The graph model therefore makes it straightforward to move through the supply-ch
 ## Backend
 
 * C#
-* .NET 9
+* .NET 10
 * ASP.NET Core Web API
 * Neo4j .NET Driver
 * Dependency Injection
@@ -573,13 +573,13 @@ cd publish
 dotnet Backend.dll
 ```
 
-For deployment, the CognoDB credentials should be configured through the hosting provider's environment-variable settings rather than stored in the repository.
+
 
 ---
 
-# 14. PXXL Deployment
+# 14. Render Deployment
 
-The backend is intended to be hosted using a free PXXL hosting tier.
+The backend is intended to be hosted using a free render hosting tier.
 
 The following environment variables must be configured in PXXL:
 
@@ -761,9 +761,7 @@ Production credentials should be configured through PXXL environment variables.
 
 # 19. Screenshots
 
-Screenshots demonstrating the completed application should be stored in the repository.
 
-Recommended screenshots:
 
 ```text
 screenshots/
@@ -798,13 +796,12 @@ screenshots/
 
 # 20. Hosted Application Demo
 
-**Live Application:**
+[**Live Application:**](https://supply-chain-explorer-h2rp.vercel.app/)
 
-> TODO — ADD PXXL FRONTEND URL
 
 **Backend API:**
 
-> TODO — ADD PXXL BACKEND URL
+> [BACKEND URL](https://supplychainexplorer.onrender.com/)
 
 The hosted application demonstrates the working supply-chain management interface and its connection to the deployed ASP.NET Core backend and CognoDB database.
 
@@ -834,9 +831,7 @@ The recording should show:
 
 # 22. GitHub Repository
 
-**Repository:**
-
-> TODO — ADD GITHUB REPOSITORY LINK
+[**Repository:**](https://github.com/Precious-Adeoye/SupplyChainExplorer)
 
 The repository contains:
 
@@ -880,14 +875,14 @@ Before submitting the project, verify the following:
 * [x] CognoDB configuration documented
 * [x] API endpoints documented
 * [x] Main queries explained
-* [ ] Final screenshots added
-* [ ] GitHub repository URL added
-* [ ] PXXL hosted application URL added
-* [ ] Backend deployment URL added
-* [ ] Screen recording completed
-* [ ] Screen recording link added
-* [ ] No credentials committed to GitHub
-* [ ] Final application tested using the hosted deployment
+* [x] Final screenshots added
+* [x] GitHub repository URL added
+* [x] Render hosted application URL added
+* [x] Backend deployment URL added
+* [x] Screen recording completed
+* [x] Screen recording link added
+* [x] No credentials committed to GitHub
+* [x] Final application tested using the hosted deployment
 
 ---
 
