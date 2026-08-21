@@ -1,75 +1,80 @@
-// =========================
+// ================================
 // SUPPLIERS
-// =========================
+// ================================
 
-MERGE (s1:Supplier {name: "Global Foods"})
-SET s1.email = "contact@globalfoods.com",
-    s1.phone = "+2348000000000"
+MERGE (global:Supplier {name: "Global Foods"})
+SET global.email = "contact@globalfoods.com",
+    global.phone = "+2348000000000";
 
-MERGE (s2:Supplier {name: "Fresh Harvest Ltd"})
-SET s2.email = "hello@freshharvest.com",
-    s2.phone = "+2348111111111"
+MERGE (fresh:Supplier {name: "Fresh Harvest Ltd"})
+SET fresh.email = "sales@freshharvest.com",
+    fresh.phone = "+2348111111111";
 
 
-// =========================
+// ================================
 // CATEGORIES
-// =========================
+// ================================
 
-MERGE (c1:Category {name: "Grains"})
-SET c1.description = "Rice, wheat and other grain products"
+MERGE (grains:Category {name: "Grains"})
+SET grains.description = "Rice, wheat and other grain products";
 
-MERGE (c2:Category {name: "Beverages"})
-SET c2.description = "Drinks and beverage products"
+MERGE (beverages:Category {name: "Beverages"})
+SET beverages.description = "Juices and other beverage products";
 
 
-// =========================
+// ================================
 // WAREHOUSES
-// =========================
+// ================================
 
-MERGE (w1:Warehouse {name: "Lagos Central Warehouse"})
-SET w1.location = "Lagos, Nigeria"
+MERGE (lagos:Warehouse {name: "Lagos Central Warehouse"})
+SET lagos.location = "Lagos, Nigeria";
 
-MERGE (w2:Warehouse {name: "Port Harcourt Warehouse"})
-SET w2.location = "Port Harcourt, Nigeria"
+MERGE (ph:Warehouse {name: "Port Harcourt Warehouse"})
+SET ph.location = "Port Harcourt, Nigeria";
 
 
-// =========================
+// ================================
 // PRODUCTS
-// =========================
+// ================================
 
-MERGE (p1:Product {sku: "RICE-001"})
-SET p1.name = "Premium Rice",
-    p1.price = 55000
+MERGE (rice:Product {sku: "RICE-101"})
+SET rice.name = "Premium Rice",
+    rice.price = 80000;
 
-MERGE (p2:Product {sku: "DRINK-001"})
-SET p2.name = "Mango Juice",
-    p2.price = 3500
+MERGE (wheat:Product {sku: "WHEAT-001"})
+SET wheat.name = "Wheat",
+    wheat.price = 75000;
 
-
-// =========================
-// SUPPLIES
-// =========================
-
-MERGE (s1)-[:SUPPLIES]->(p1)
-MERGE (s2)-[:SUPPLIES]->(p2)
+MERGE (juice:Product {sku: "JUICE-001"})
+SET juice.name = "Mango Juice",
+    juice.price = 3500;
 
 
-// =========================
-// CATEGORIES
-// =========================
+// ================================
+// PRODUCT RELATIONSHIPS
+// ================================
 
-MERGE (p1)-[:BELONGS_TO]->(c1)
-MERGE (p2)-[:BELONGS_TO]->(c2)
+MERGE (global)-[:SUPPLIES]->(rice);
+MERGE (global)-[:SUPPLIES]->(wheat);
+MERGE (fresh)-[:SUPPLIES]->(juice);
+
+MERGE (rice)-[:BELONGS_TO]->(grains);
+MERGE (wheat)-[:BELONGS_TO]->(grains);
+MERGE (juice)-[:BELONGS_TO]->(beverages);
 
 
-// =========================
+// ================================
 // INVENTORY
-// =========================
+// ================================
 
-MERGE (p1)-[i1:STORED_AT]->(w1)
-SET i1.quantity = 100,
-    i1.reorderLevel = 20
+MERGE (rice)-[riceStock:STORED_AT]->(lagos)
+SET riceStock.quantity = 100,
+    riceStock.reorderLevel = 20;
 
-MERGE (p2)-[i2:STORED_AT]->(w2)
-SET i2.quantity = 15,
-    i2.reorderLevel = 25
+MERGE (wheat)-[wheatStock:STORED_AT]->(ph)
+SET wheatStock.quantity = 75,
+    wheatStock.reorderLevel = 15;
+
+MERGE (juice)-[juiceStock:STORED_AT]->(lagos)
+SET juiceStock.quantity = 200,
+    juiceStock.reorderLevel = 50;

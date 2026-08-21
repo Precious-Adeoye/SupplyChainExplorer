@@ -1,20 +1,20 @@
-// Count products supplied by each supplier
-
+// Products per supplier
 MATCH (s:Supplier)-[:SUPPLIES]->(p:Product)
-RETURN
-    s.name AS supplier,
-    count(p) AS productCount
-ORDER BY productCount DESC;
+RETURN s.name AS supplier,
+       count(p) AS products
+ORDER BY products DESC;
 
 
-// Find products at or below their reorder level
+// Inventory value by warehouse
+MATCH (p:Product)-[r:STORED_AT]->(w:Warehouse)
+RETURN w.name AS warehouse,
+       sum(p.price * r.quantity) AS inventoryValue
+ORDER BY inventoryValue DESC;
 
+
+// Low-stock count by warehouse
 MATCH (p:Product)-[r:STORED_AT]->(w:Warehouse)
 WHERE r.quantity <= r.reorderLevel
-RETURN
-    p.sku AS productSku,
-    p.name AS product,
-    w.name AS warehouse,
-    r.quantity AS quantity,
-    r.reorderLevel AS reorderLevel
-ORDER BY r.quantity ASC;
+RETURN w.name AS warehouse,
+       count(p) AS lowStockItems
+ORDER BY lowStockItems DESC;
