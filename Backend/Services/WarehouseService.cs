@@ -72,8 +72,13 @@ namespace Backend.Services
 
                     return new WarehouseDto
                     {
-                        Name = warehouse.Properties["name"]?.ToString() ?? string.Empty,
-                        Location = warehouse.Properties["location"]?.ToString() ?? string.Empty
+                        Name = warehouse.Properties.TryGetValue("name", out var name)
+                           ? name?.ToString() ?? string.Empty
+                             : string.Empty,
+
+                        Location = warehouse.Properties.TryGetValue("location", out var location)
+                             ? location?.ToString() ?? string.Empty
+                                 : string.Empty
                     };
                 }).ToList();
             }

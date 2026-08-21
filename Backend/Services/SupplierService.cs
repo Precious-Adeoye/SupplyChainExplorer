@@ -45,9 +45,17 @@ namespace Backend.Services
 
                 return new SupplierDto
                 {
-                    Name = supplier.Properties["name"]?.ToString() ?? string.Empty,
-                    Email = supplier.Properties["email"]?.ToString() ?? string.Empty,
-                    Phone = supplier.Properties["phone"]?.ToString() ?? string.Empty
+                    Name = supplier.Properties.TryGetValue("name", out var name)
+          ? name?.ToString() ?? string.Empty
+          : string.Empty,
+
+                    Email = supplier.Properties.TryGetValue("email", out var email)
+          ? email?.ToString() ?? string.Empty
+          : string.Empty,
+
+                    Phone = supplier.Properties.TryGetValue("phone", out var phone)
+          ? phone?.ToString() ?? string.Empty
+          : string.Empty
                 };
             }
             finally
@@ -72,19 +80,23 @@ namespace Backend.Services
 
                 var records = await result.ToListAsync();
 
-                var suppliers = records.Select(record =>
+                return records.Select(record =>
                 {
                     var supplier = record["s"].As<INode>();
 
+                    supplier.Properties.TryGetValue("name", out var name);
+                    supplier.Properties.TryGetValue("email", out var email);
+                    supplier.Properties.TryGetValue("phone", out var phone);
+
                     return new SupplierDto
                     {
-                        Name = supplier.Properties["name"]?.ToString() ?? string.Empty,
-                        Email = supplier.Properties["email"]?.ToString() ?? string.Empty,
-                        Phone = supplier.Properties["phone"]?.ToString() ?? string.Empty
+                        Name = name?.ToString() ?? string.Empty,
+                        Email = email?.ToString() ?? string.Empty,
+                        Phone = phone?.ToString() ?? string.Empty
                     };
                 }).ToList();
 
-                return suppliers;
+               
             }
             finally
             {

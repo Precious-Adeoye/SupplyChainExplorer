@@ -16,9 +16,9 @@ namespace Backend.Services
         public async Task<ProductDto> CreateProductAsync(CreateProductDto dto)
         {
            var query = """
-            MATCH (s:Supplier {name: $supplierName})
-            MATCH (c:Category {name: $categoryName})
-            MATCH (w:Warehouse {name: $warehouseName})
+            MERGE (s:Supplier {name: $supplierName})
+            MERGE (c:Category {name: $categoryName})
+            MERGE (w:Warehouse {name: $warehouseName})
 
             CREATE (p:Product {
                 name: $name,
