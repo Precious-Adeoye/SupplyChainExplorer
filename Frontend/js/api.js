@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://localhost:7038";
+const API_BASE_URL = "https://supplychainexplorer.onrender.com";
 
 async function getProducts() {
     const response = await fetch(`${API_BASE_URL}/api/Products`);
