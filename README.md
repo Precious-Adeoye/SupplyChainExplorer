@@ -774,23 +774,23 @@ screenshots/
 
 ### Dashboard
 
-![Dashboard]([screenshots/dashboard.png](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Dashboard.png))
+![Dashboard](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Dashboard.png)
 
 ### Products
 
-![Products]([screenshots/products.png](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Products.png))
+![Products](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Products.png) 
 
 ### Suppliers
 
-![Suppliers]([screenshots/suppliers.png](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Suppliers.png))
+![Suppliers](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Suppliers.png) 
 
 ### Warehouses
 
-![Warehouses]([screenshots/warehouses.png](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Warehouse.png))
+![Warehouses](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Warehouse.png)
 
 ### Inventory
 
-![Inventory]([screenshots/inventory.png](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Inventory.png))
+![Inventory](https://github.com/Precious-Adeoye/SupplyChainExplorer/blob/main/Inventory.png)
 
 ---
 
